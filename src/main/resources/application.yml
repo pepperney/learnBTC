@@ -1,0 +1,15 @@
+server:
+  port: 9091
+
+project:
+  name: learnBTC
+
+
+logging:
+  config: classpath:logback.xml
+  level:
+    org.springframework.boot: INFO
+    org.springframework.web: INFO
+    org.springframework.remoting.support : INFO
+    com.pepper: INFO
+  path: /home/finance/Logs/${project.name}
